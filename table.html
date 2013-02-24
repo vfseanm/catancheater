@@ -1,0 +1,40 @@
+<?php
+
+$host = "localhost";
+$user = "root";
+$db_name = "stickershock";
+$password= "root";
+
+$con = mysql_connect($host, $user, $password);
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+
+mysql_select_db("stickershock", $con);
+
+$result = mysql_query("SELECT * FROM items");
+
+echo "<table border='1'>
+<tr>
+<th>Item Name</th>
+<th>Store Name</th>
+<th>Item Price</th>
+<th>Desired Price</th>
+<th>Buy?</th>
+</tr>";
+
+while($row = mysql_fetch_array($result))
+  {
+  echo "<tr>";
+  echo "<td>" . $row['itemName'] . "</td>";
+  echo "<td>" . $row['storeName'] . "</td>";
+  echo "<td>" . $row['itemPrice'] . "</td>";
+  echo "<td>" . $row['desiredPrice'] . "</td>";
+  echo "<td> No </td>";
+  echo "</tr>";
+  }
+echo "</table>";
+
+mysql_close($con);
+?>

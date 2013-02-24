@@ -1,0 +1,114 @@
+
+<html lang = "en">
+<head>
+        <link href="bootstrap.css" rel="stylesheet">
+
+        <script src="http://code.jquery.com/jquery-latest.js">     </script>
+        <script src="bootstrap.js"></script>
+</head>
+<body>
+
+        <div class = "container">
+                <div class = "toprow">
+                </div>
+                <div class = "masthead">
+                        <ul class = "nav nav-pills pull-right">
+                            <li><a class="btn btn-link" href="#">Home</a></li>
+                            <li><a class="btn btn-link" href="#">My Account</a></li>
+                        </ul>
+                </div>
+                <div class = "row"> </div>
+                <hr>
+                <div class = "span3 offset4">
+                        <h1> <img src="logo.png" class="img-rounded"> </h1>
+                </div>
+                <div class = "span4"></div>
+                <div class = "row"></div>
+                <!-- <div class="input-append">
+  					<input class="span9" id="appendedInputButton" type="text">
+  					<button class="btn" type="button">Stick It!</button>
+				</div> -->
+                <div class = "skinnytoprow"></div>
+                	<form class = "form">
+                		<div class = "span7 offset1">
+                           	<input id ="link" type="text" class = "input-block-level" placeholder="Enter URL here!"/>
+                        </div>
+                        <div class = "span.5"></div>
+                		<!-- <button class = "btn btn-primary" type = "submit" data-toggle="collapse" data-target="#info">Stick It!</button>
+                		<div id="info" class="collapse in"> â€¦ </div> -->
+                		<button type="button" id = "stickit" class="btn btn-primary" data-toggle="collapse" data-target="#info">Stick It!</button>
+                	
+                	</form>
+
+              	<div id="info" class="collapse">
+				<div class="accordion-inner" style = "line-height: 40px">
+        		<div class = "span 2">
+                  <img src="noimage.jpeg" class="img-rounded">
+                </div>
+
+                        <div class = "span .5"> </div>
+                        <table class = "table-condensed">
+                            <tr>
+                                <td> <small> Company Name </small> </td>
+                                <td> 
+                                     <div class = "span5">
+                                        <input type="text" id = "storename" class = "input-block-level" placeholder="Company name"/> 
+                                     </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <small> Product Name </small></td>
+                                <td> <input type="text" id = "itemname" class = "input-block-level" placeholder="Product Name"/> </td>
+                            </tr>
+                            <tr>
+                            
+                                <td> <small> Item Price </small> </td>
+                                <td> 
+                                     <div class = "span2">
+                                        <input type="text" id = "price" class = "input-block-level" placeholder="Item Price"/> </td>
+                                    </div>
+                            </tr>
+
+                            <tr>
+                                <td> <small> Desired Price </small> </td>
+                                <td>
+                                 <div class = "span2"> 
+                                    <input type="text" id = "wantprice" class = "input-block-level" placeholder="Desired Price"/> </td>
+                                </div>
+                            </tr>
+
+                        </table>
+
+
+
+
+      				</div>
+
+      			</div>
+
+                     
+        </div>
+
+
+<div class="navbar navbar-fixed-bottom">
+  <a>  &copy; Jane Upshur, Dan Deng</a>
+</div>
+
+</body>
+
+  <script type="text/javascript">
+        (function(){
+            $('#stickit').click(parseURL) 
+        })();
+            function parseURL() {
+                url = $('#link')[0].value;
+                var path = url.split('/');
+                $('#storename')[0].value = path[2];
+                $('#itemname')[0].value = path[3];
+                $('#price')[0].value = '$';
+                $('#wantprice')[0].value = '$';
+            }
+
+    </script>
+
+</html>
