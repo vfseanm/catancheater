@@ -3,6 +3,9 @@
         <link href="bootstrap.css" rel="stylesheet">
         <style type="text/css">
 
+            body {background-image:url('fabric.png');}
+     
+
         </style>
 
 
@@ -173,10 +176,15 @@
                   $.ajax({
                         url: 'login.php',
                         success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                            alert(response);
-                             
+                            $("#loginalert").attr('class', 'alert alert-success');
+                            $('#loginalert').fadeIn();
+                            $('#loginalert').html("Login succesful!");
+                                               
                       }
                      });
+                      setTimeout(function() {
+                        window.location.replace("MainPage.html");
+                     }, 3000);     
                 }
 
             }

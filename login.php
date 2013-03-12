@@ -19,7 +19,7 @@ mysql_select_db($db_name, $con);
 $result = mysql_query("SELECT * FROM items");
 
 while($row = mysql_fetch_array($result)) {
-	if ($email == $row['email'] && $password == $row ['password']) {
+	if ($email == $row['email'] && $password == $row['password']) {
 		$authorized = True;
 	}
 }

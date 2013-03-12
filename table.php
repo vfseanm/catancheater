@@ -5,6 +5,8 @@
         <script src="http://code.jquery.com/jquery-latest.js">     </script>
         <script src="bootstrap.js"></script>
         <style type="text/css">
+
+        body {background-image:url('fabric.png');}
           table.db-table     { border-right:1px solid #ccc; border-bottom:1px solid #ccc; }
 table.db-table th  { background:#eee; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
 table.db-table td  { padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; }
@@ -62,10 +64,10 @@ Then you are good to go!
 <div align="center">
 <?php
 
-$host = "mysql10.000webhost.com";
-$user = "a7487523_root";
-$db_name = "a7487523_sticker";
-$password= "password1";
+$host = "localhost";
+$user = "root";
+$db_name = "stickershock";
+$password= "root";
 
 $con = mysql_connect($host, $user, $password);
 if (!$con)
@@ -96,7 +98,15 @@ while($row = mysql_fetch_array($result))
   echo "<td> " . $row['desiredPrice'] . " </td>";
   $url = $row['link'];
   echo "<td> <a href = $url> Link </a> </td>";
+
+if ($row['itemPrice'] > $row['desiredPrice']) {
   echo "<td> <p> No </p> </td>";
+ }
+ else {
+  echo "<td> <b> Yes </b> </td>";
+ }
+
+
   echo "</tr>";
   }
 echo "</table>";
