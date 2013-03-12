@@ -32,7 +32,7 @@
                                     <b class="caret"></b>
                                   </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="btn btn-link" href = "table.php#" id = "account">Items</a></li>
+                                    <li><a class="btn btn-link" href = "table.html" id = "account">Items</a></li>
                                     <li><a class="btn btn-link" href = "homepage.html">Log out</a></li>
                                   <!-- links -->
                                 </ul>
@@ -121,7 +121,7 @@
                             opacity: 0.9;
                             -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity = 90);
                             /*-ms-filter must come before filter*/
-                            filter: alpha(opacity = 90); background-color:#FFF; padding-top: 20px; padding-right: 20px; padding-left: 20px; padding-bottom: 20px; height:200px; width:170px"><h3 style = "text-align: center">Find an item</h3>
+                            filter: alpha(opacity = 90); background-color:#FFF; padding-top: 20px; padding-right: 20px; padding-left: 20px; padding-bottom: 20px; height:200px; width:170px"><h3 style = "text-align: center">1. Find an item</h3>
                             <div style = "margin-left: auto; margin-right: auto; text-align: center">
                           
                             <p>Look for items you want to buy online</p>
@@ -142,7 +142,7 @@
                             opacity: 0.9;
                             -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity = 90);
                             /*-ms-filter must come before filter*/
-                            filter: alpha(opacity = 90); background-color:#FFF; padding-top: 20px; padding-right: 20px; padding-left: 20px; padding-bottom: 20px; height:200px; width:170px"><h3 style = "text-align: center">Track the item</h3>
+                            filter: alpha(opacity = 90); background-color:#FFF; padding-top: 20px; padding-right: 20px; padding-left: 20px; padding-bottom: 20px; height:200px; width:170px"><h3 style = "text-align: center">2. Track it</h3>
                             <div style = "margin-left: auto; margin-right: auto; text-align: center">
                             <p>Paste the URL of the item into our search bar</p>
                              <div style = "padding-top: 10px">
@@ -163,7 +163,7 @@
                             opacity: 0.9;
                             -ms-filter: progid: DXImageTransform.Microsoft.Alpha(Opacity = 90);
                             /*-ms-filter must come before filter*/
-                            filter: alpha(opacity = 90); background-color:#FFF; padding-top: 20px; padding-right: 20px; padding-left: 20px; padding-bottom: 20px; height:200px; width:170px"><h3 style = "text-align: center">Wait</h3>
+                            filter: alpha(opacity = 90); background-color:#FFF; padding-top: 20px; padding-right: 20px; padding-left: 20px; padding-bottom: 20px; height:200px; width:170px"><h3 style = "text-align: center">3. Wait</h3>
                             <div style = "margin-left: auto; margin-right: auto; text-align: center">
                             <p>We'll send you an email when the price drops!</p>
                             <div style = "padding-top: 10px">
@@ -204,7 +204,7 @@
 
             function showItems() {
                 $.ajax({
-                   url: 'table.php',
+                   url: 'table.html',
                    success: function (response) {//response is value returned from php (for your example it's "bye bye"
                      //alert(response);
                    }

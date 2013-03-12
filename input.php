@@ -1,10 +1,10 @@
 <?php
 
 //Configure and Connect to the Databse
-$host = "mysql10.000webhost.com";
-$user = "a7487523_root";
-$db_name = "a7487523_sticker";
-$password= "password1";
+$host = "localhost";
+$user = "root";
+$db_name = "stickershock";
+$password= "root";
 
  $con = mysql_connect($host, $user, $password);
 
