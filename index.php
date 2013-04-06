@@ -47,23 +47,12 @@
 
 <!-- Start of second page: #main -->
 <div data-role="page" id="main" data-theme="a">
-
-	<div data-role="header">
-		<h1>This is Seans Page</h1>
-	</div><!-- /header -->
-
-	<div data-role="content" data-theme="a">	
-		<h2>Set up the games</h2>
-		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
-		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
-		<p><a href="#player1" data-role="button">Start game</a></p>	
-		<p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to Home</a></p>	
-		
-	</div><!-- /content -->
+<?php
+ include "setup-board-display.php";
 	
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
+?>
+	
+
 </div><!-- /page two -->
 
 <!-- #####################################################################################################################################
