@@ -1,203 +1,176 @@
 <?php
-# This function reads your DATABASE_URL configuration automatically set by Heroku
-# the return value is a string that will work with pg_connect
 
+	
 ?>
 
-<html lang = "en">
+
+<!DOCTYPE html> 
+<html>
+
 <head>
-        <link href="bootstrap.css" rel="stylesheet">
-        <style type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Multi-page template</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+</head> 
 
-            body {background-image:url('fabric.png');}
-     
+	
+<body> 
 
-        </style>
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>Settlers of Catan</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<h2>Welcome to Catan!</h2>
+		
+		<p>I have an <code>id</code> of "one" on my page container. I'm first in the source order so I'm shown when the page loads.</p>	
+		
+		<p>This is a multi-page boilerplate template that you can copy to build your first jQuery Mobile page. This template contains multiple "page" containers inside, unlike a <a href="page-template.html"> single page template</a> that has just one page within it.</p>	
+		<p>Just view the source and copy the code to get started. All the CSS and JS is linked to the jQuery CDN versions so this is super easy to set up. Remember to include a meta viewport tag in the head to set the zoom level.</p>
+		<p>You link to internal pages by referring to the <code>id</code> of the page you want to show. For example, to <a href="#two" >link</a> to the page with an <code>id</code> of "two", my link would have a <code>href="#two"</code> in the code.</p>	
+
+		<h3>Start game:</h3>
+		<p><a href="#main" data-role="button">Set up game</a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page one -->
 
 
-</head>
-<body>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="bootstrap.js"></script>
-        <div class = "container">
-                <div class = "toprow">
-                </div>
-                <div class = "masthead">
-                        <ul class = "nav nav-pills pull-right">
-                                <li>
-                                        <a class="btn btn-link" href="MainPage.html">Main</a>
-                                </li>
-                                
-                                <li>
-                                        <a href="#login" role="button" class="btn btn-link" data-toggle="modal" data-target="#login">Login</a>
-                                        <!-- Modal -->
-                                        
-                                        <div id="login" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
-                                                <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-                                                        <h2 id="loginLabel">Please Log In</h2>
-                                                </div>
-                                                <div class="modal-body">
-                                                        <form class = "loginform">
-                                                                <input id = "loginemail" type="text" class = "input-block-level" placeholder="email address"/>
-                                                                <input id = "loginpw" type="password" class = "input-block-level" placeholder="password"/>
-                                                                <label class = "checkbox">
-                                                                <input type = "checkbox" value = "remember-me">Remember me</label>
-                                                                <div class = "skinnytoprow"></div>
-                                                                <div id="loginalert" class="alert alert-error hide" data-alert="alert" style="top:0">
-                                                                 You need to change something
-                                                                 </div>                                                                  
-                                                                
-                                                               <button type = "button" id = "loginbutton" class="btn btn-large btn-primary">Login</button>
-                                                                <button class= "btn btn-link">Forgot Password?</button>
-                                                        </form>
-                                                </div>
+<!-- Start of second page: #main -->
+<div data-role="page" id="main" data-theme="a">
 
-                                                
-                                        </div>
-                                </li>
-                        </ul>
-                </div>
-                <div class = "row"> </div>
-                <hr>
-                <div class = "span3"></div>
-                <div class = "span6">
-                        <h1> <img src="logo.png" class="img-rounded"> </h1>
-                </div>
-                <div class = "span3"></div>
-                <div class = "row"> </div>
-                <div class = "jumbotron">
-                        <p class = "lead" align = "center"> "When the price tag is ashes, you have our permission to buy"
-                        </p>
-                        <div class = "span6"></div>
-                        <!-- <a class = "btn btn-large btn-primary" href = "#">Sign up!</a> -->
-                        <a href="#signup" role="button" class="btn btn-large btn-primary" data-toggle="modal" data-target="#signup">Sign up!</a>
-                                        <!-- Modal -->
-                                        
-                                        <div id="signup" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signupLabel" aria-hidden="true">
-                                                <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-                                                        <h2 id="signupLabel">New to StickerShock?</h2>
-                                                </div>
-                                                <div class="modal-body">
-                                                        <form id = "signupform" class = "signupform" action = "register.php" method="post"> <!-- action = php -->
-                                                        <fieldset>
-                                                                <input type="text" id = "firstName" name= "firstName" class = "input-block-level" placeholder="First Name"/>
-                                                                <input type="text" id = "lastName" name="lastName" class = "input-block-level" placeholder="Last Name"/>
-                                                                <input type="text" id = "email" name="email" class = "input-block-level" placeholder="Email Address"/>
-                                                                <input type="password" id = "password" name="password" class = "input-block-level" placeholder="Create Password"/>
-                                                                <input type="password" id = "retype" class = "input-block-level" placeholder="Re-enter Password"/>
-                                                                <div class = "skinnytoprow"></div>
+	<div data-role="header">
+		<h1>This is Seans Page</h1>
+	</div><!-- /header -->
 
-                                                                 <div id="alert" class="alert alert-error hide" data-alert="alert" style="top:0">
-                                                                 You need to change something
-                                                                 </div>
-                                                        
-                                                                <button type = "button" id = "register" class="btn btn-large btn-primary">Sign Up!</button>
-                                                                <button class= "btn btn-link" data-dismiss="modal" aria-hidden="true">Already have an account?</button>
-                                                        </fieldset>
-                                                        </form>
-                                                </div>
-                                                
-                                        </div>
-                <hr>
-        </div>
-        <i class="icon-search"></i>
+	<div data-role="content" data-theme="a">	
+		<h2>Set up the games</h2>
+		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
+		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
+		<p><a href="#player1" data-role="button">Start game</a></p>	
+		<p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to Home</a></p>	
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
 
-<div class="navbar navbar-fixed-bottom">
-  <a> &copy Dan Deng</a>
-</div>
+<!-- #####################################################################################################################################
+ -->
+
+<!-- Start player one page: #player1 -->
+<div data-role="page" id="player1" data-theme="a">
+
+	<div data-role="header">
+		<h1>It is player 1's turn</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<h2>Player 1</h2>
+		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
+		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
+		<div data-role="fieldcontain">
+		   <label for="slider">Dice Roll:</label>
+		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
+		</div>
+		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
+			<a href="#one" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
+			<a href="#player2" data-role="button" data-inline="true">Next turn</a>
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<!-- #####################################################################################################################################
+ -->
+<!-- Start player one page: #player2 -->
+<div data-role="page" id="player2" data-theme="a">
+
+	<div data-role="header">
+		<h1>It is player 2's turn</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<h2>Player 2</h2>
+		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
+		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
+		<div data-role="fieldcontain">
+		   <label for="slider">Dice Roll:</label>
+		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
+		</div>
+		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
+		<a href="#player1" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
+	    <a href="#player3" data-role="button" data-inline="true">Next turn</a>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<!-- #####################################################################################################################################
+ -->
+<div data-role="page" id="player3" data-theme="a">
+
+	<div data-role="header">
+		<h1>It is player 3's turn</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<h2>Player 3</h2>
+		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
+		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
+		<div data-role="fieldcontain">
+		   <label for="slider">Dice Roll:</label>
+		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
+		</div>
+		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
+		<a href="#player2" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
+	    <a href="#player4" data-role="button" data-inline="true">Next turn</a>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+ <!-- #####################################################################################################################################
+ -->
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="recommendation">
+
+	<div data-role="header" data-theme="e">
+		<h1>Your recommendation</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<h2>Trade Player Two three wood for five sheep </h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
 
 </body>
-
-<script type="text/javascript">
-       (function(){
-            $('#register').click(processInfo) 
-            $('#loginbutton').click(login)
-        })();
-            function processInfo() {
-                firstName = $('#firstName')[0].value;
-                lastName = $('#lastName')[0].value;
-                email = $('#email')[0].value;
-                password = $('#password')[0].value;
-                retype = $('#retype')[0].value;
-
-                if (firstName === "") {           
-                    $('#alert').fadeIn();
-                    $('#alert').html("<p>You must input a first name</p>");
-                }         
-                else if (lastName === "") {           
-                    $('#alert').fadeIn();
-                    $('#alert').html("<p>You must input a last name</p>");
-                }
-             
-                else if (email === "") {           
-                    $('#alert').fadeIn();
-                    $('#alert').html("<p>You must input an email address</p>");
-                }
-              
-                else if (password.length < 6) {           
-                    $('#alert').fadeIn();
-                    $('#alert').html("<p>Your password must be at least six characters</p>");
-                }          
-                else if (retype != password) {           
-                    $('#alert').fadeIn();
-                    $('#alert').html("<p>Your password does not match</p>");
-                }
-                else {
-                    $.post('register.php', {firstName: firstName, lastName: lastName, email: email, password: password},
-                    function(data) {
-                        //window.location.replace("MainPage.html");
-                         $("#alert").attr('class', 'alert alert-success');
-                         $('#alert').fadeIn();
-                         $('#alert').html("Successfully registered! Check your email!");
-                         $.post('useremail.php', {email: email});
-                         $.ajax({
-                           url: 'useremail.php',
-                           success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                             
-                           }
-                        });
-                    });
-                    setTimeout(function() {
-                        window.location.replace("MainPage.html");
-                    }, 3000);
-
-                }    
-            }
-            function login() {
-
-                loginemail = $('#loginemail')[0].value;
-                loginpassword = $('#loginpw')[0].value;
-                if (loginemail === "") {
-                    $('#loginalert').fadeIn();
-                    $('#loginalert').html("<p>Sorry, no records found</p>");
-                }
-                if (loginpassword === "") {
-                    $('#loginalert').fadeIn();
-                    $('#loginalert').html("<p>Sorry, no records found</p>");
-                }
-                else {
-                  $.post('login.php', {email: loginemail, password: loginpassword});
-                  $.ajax({
-                        url: 'login.php',
-                        success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                            $("#loginalert").attr('class', 'alert alert-success');
-                            $('#loginalert').fadeIn();
-                            $('#loginalert').html("Login succesful!");
-                                               
-                      }
-                     });
-                      setTimeout(function() {
-                        window.location.replace("MainPage.html");
-                     }, 3000);     
-                }
-
-            }
-
-  
-
-</script>
-
-
 </html>
+
+
