@@ -73,8 +73,10 @@
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
+		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
+
 		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-			<a href="#one" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
+			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
 			<a href="#player2" data-role="button" data-inline="true">Next turn</a>
 		
 	</div><!-- /content -->
@@ -178,6 +180,32 @@
 
 	<div data-role="header" data-theme="e">
 		<h1>Your recommendation</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<h2>Trade Player Two three wood for five sheep </h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+</body>
+</html>
+
+ <!-- #####################################################################################################################################
+ -->
+
+
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="build">
+
+	<div data-role="header" data-theme="e">
+		<h1>Build settlements</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="d">	
