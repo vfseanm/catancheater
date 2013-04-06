@@ -140,6 +140,38 @@
 
  <!-- #####################################################################################################################################
  -->
+<div data-role="page" id="player4" data-theme="a">
+
+	<div data-role="header">
+		<h1>It is player 4's turn</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<h2>Player 4</h2>
+		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
+		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
+		<div data-role="fieldcontain">
+		   <label for="slider">Dice Roll:</label>
+		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
+		</div>
+		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
+		<a href="#player3" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
+	    <a href="#player1" data-role="button" data-inline="true">Next turn</a>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+
+
+
+ <!-- #####################################################################################################################################
+ -->
+
+
 
 <!-- Start of third page: #popup -->
 <div data-role="page" id="recommendation">

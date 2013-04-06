@@ -247,6 +247,7 @@
 			<input type="range" name="slider-1" id="slider-1" value="7" min="0" max="12" />
 
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+		<p><a href="#player1" data-role="button">Start game</a></p>	
 	</fieldset>
 	</form>
 
