@@ -110,7 +110,7 @@ function resourceList(){
 	array_multisort($vertArray[0], SORT_DESC, SORT_NUMERIC, $vertArray[1], SORT_NUMERIC, SORT_DESC);
 
 	for($k=0; $k<11; $k++){
-		echo $vertArray
+		echo $vertArray[k][0];
 	}
 }
 
