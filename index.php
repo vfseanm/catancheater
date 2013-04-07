@@ -52,7 +52,7 @@
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-theme="d">
-		<h4>Page Footer</h4>
+		<h4></h4>
 	</div><!-- /footer -->
 </div><!-- /page one -->
 
@@ -80,6 +80,7 @@
 
 	<div data-role="content" data-theme="b">	
 		<h2>Player 1</h2>
+		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
 
 	</div><!-- /header -->
 
@@ -90,7 +91,7 @@
 
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
-		   <input type="range" name="diceroll" id="slider" value="6" min="0" max="12"  />
+		   <input type="range" name="diceroll" id="slider" value="6" min="0" max="12"/>
 		</div>
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
@@ -202,6 +203,8 @@
 		<h2>Player 4</h2>
 		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
 
+
+
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="b">	
@@ -271,7 +274,7 @@
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="d">	
-		<p>Map goes here!</p>		
+		<img src="/map.png" style="height: 60%; width: 60%">		
 		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
 	</div><!-- /content -->
 	

@@ -44,10 +44,6 @@
 
    <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>
 
-   <script>
 
-   }
-
-   </script>
 
 </div>
