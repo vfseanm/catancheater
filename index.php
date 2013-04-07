@@ -42,8 +42,17 @@
 
 		<h3>Start game:</h3>
 	<form action="create.php" method="get">
-		<button type="submit" data-theme="b" name="submit" value="submit-value">Set up game</button>
+		<button type="submit" data-theme="b" onclick="goToSetUp()" name="submit" value="submit-value">Set up game</button>
 	</form>
+
+	<script>
+
+
+	function goToSetUp(){
+	window.location = "/#main"
+	}
+
+	</script>
 
 	</div><!-- /content -->
 	
@@ -54,7 +63,7 @@
 
 
 <!-- Start of second page: #main -->
-<div data-role="page" id="main" data-theme="a">
+<div data-role="page" id="main" data-theme="b">
 <?php
  include "setup-board-display.php";
 	
