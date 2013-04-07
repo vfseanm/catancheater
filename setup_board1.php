@@ -104,7 +104,8 @@ function resourceList(){
 	$v53 = $numberMaps[resourceArray[18]->number];
 
 	for($i=0; $i<54; $i++){
-		$vertArray[i] = $v $(i);
+		$var = '$v' + strval(i);
+		$vertArray[i] = eval($var);
 	}
 	sort($vertArray);
 }
