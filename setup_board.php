@@ -1,9 +1,6 @@
-<?php
- 
-echo $_GET["select-choice-a1"];
+<?php 
+header("location: http://localhost:8888/#player1");
 
- 
-echo $_GET["slider-a1"];
+ ?>
 
- #create_board()
-?>
+

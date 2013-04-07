@@ -5,6 +5,13 @@
 
 <!-- Start of first page: #one -->
 
+<?php 
+$bar = new foo;
+
+$bar->get_name();
+
+?>
+
 
 	<div data-role="header">
 		<h1>Catan Cheater</h1>
@@ -249,6 +256,7 @@
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
 	</form>
+
 
 
 	</div><!-- /content -->

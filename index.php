@@ -5,6 +5,11 @@
 
 
 <!DOCTYPE html> 
+
+<?php
+ include "foo.php";
+	
+?>
 <html>
 
 <head>
@@ -62,17 +67,23 @@
 <div data-role="page" id="player1" data-theme="a">
 
 	<div data-role="header">
-		<h1>It is player 1's turn</h1>
+		<h1>Player 1's Turn</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="a">	
-		<h2>Player 1</h2>
-		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
-		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
+
+	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+		<fieldset>
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
+		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+	</fieldset>
+	</form>
+		
+
+<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
 		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
 			<a href="#one" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
 			<a href="#player2" data-role="button" data-inline="true">Next turn</a>
@@ -158,6 +169,29 @@
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
+
+<!-- #####################################################################################################################################
+ -->
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="map">
+
+	<div data-role="header" data-theme="e">
+		<h1>Map Reference</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<p>Map goes here!</p>		
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- #####################################################################################################################################
+ -->
 
 </body>
 </html>
