@@ -59,13 +59,13 @@
  -->
 
 <!-- Start player one page: #player1 -->
-<div data-role="page" id="player1" data-theme="a">
+<div data-role="page" id="player1" data-theme="b">
 
 	<div data-role="header">
-		<h1>It is player 1's turn</h1>
+		<h1>Player 1's turn</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="a">	
+	<div data-role="content" data-theme="b">	
 		<h2>Player 1</h2>
 		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
 		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
@@ -76,26 +76,26 @@
 		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
 
 		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
-			<a href="#player2" data-role="button" data-inline="true">Next turn</a>
+			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
+			<a href="#player2" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>
 		
 	</div><!-- /content -->
 	
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>&copy Sean Miller, Dan Deng</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
 <!-- #####################################################################################################################################
  -->
 <!-- Start player one page: #player2 -->
-<div data-role="page" id="player2" data-theme="a">
+<div data-role="page" id="player2" data-theme="b">
 
 	<div data-role="header">
-		<h1>It is player 2's turn</h1>
+		<h1>Player 2's turn</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="a">	
+	<div data-role="content" data-theme="b">	
 		<h2>Player 2</h2>
 		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
 		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
@@ -103,25 +103,26 @@
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
+		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
 		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-		<a href="#player1" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
-	    <a href="#player3" data-role="button" data-inline="true">Next turn</a>	
+		<a href="#player1" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
+	    <a href="#player3" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>	
 	</div><!-- /content -->
 	
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>&copy Sean Miller, Dan Deng</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
 <!-- #####################################################################################################################################
  -->
-<div data-role="page" id="player3" data-theme="a">
+<div data-role="page" id="player3" data-theme="b">
 
 	<div data-role="header">
-		<h1>It is player 3's turn</h1>
+		<h1>Player 3's turn</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="a">	
+	<div data-role="content" data-theme="b">	
 		<h2>Player 3</h2>
 		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
 		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
@@ -129,26 +130,27 @@
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
+		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
 		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-		<a href="#player2" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
-	    <a href="#player4" data-role="button" data-inline="true">Next turn</a>	
+		<a href="#player2" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
+	    <a href="#player4" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>	
 	</div><!-- /content -->
 	
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>&copy Sean Miller, Dan Deng</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
 
  <!-- #####################################################################################################################################
  -->
-<div data-role="page" id="player4" data-theme="a">
+<div data-role="page" id="player4" data-theme="b">
 
 	<div data-role="header">
-		<h1>It is player 4's turn</h1>
+		<h1>Player 4's turn</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="a">	
+	<div data-role="content" data-theme="b">	
 		<h2>Player 4</h2>
 		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
 		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
@@ -156,13 +158,14 @@
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
+		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
 		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-		<a href="#player3" data-direction="reverse" data-role="button" data-inline="true" data-theme="b">Previous turn</a>
-	    <a href="#player1" data-role="button" data-inline="true">Next turn</a>	
+		<a href="#player3" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
+	    <a href="#player1" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>	
 	</div><!-- /content -->
 	
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>&copy Sean Miller, Dan Deng</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 

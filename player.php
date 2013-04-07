@@ -10,9 +10,6 @@ class player
     }
 }
 
-$p = new player;
-$p->callOut();
-
-
+global $p = new player();
 
 ?>
