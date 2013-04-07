@@ -1,15 +1,13 @@
 <?php
 
+class Player{
+	public $playerName;
+	public $resource1;
+	public $resource2;
+	public $resource3;
+	public $resource4;
+	public $resource5;
 
-class player
-{
-	public $name = "player1";
-    function callOut()
-    {
-        echo $this->name; 
-    }
 }
-
-global $p = new player();
 
 ?>
