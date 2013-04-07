@@ -12,31 +12,59 @@ function initialize(){
 }
 
 function resourceList(){
+	
+	$resource = new Resources;
+	$resource->xCoord;
+	$resource->xCoord;
+
 	$resourceArray=array();
-	for($i=0; $i<3; $i++){
-		$X = 3 + (2*(i));
-		$Y = 3 + (2*(i));
-		$resourceArray[i] = 
-	}
-	for($i=3; $i<7; $i++){
-		$X = 3 + (2*(i));
-		$Y = 3 + (2*(i));
-		$resourceArray[i] = 
-	}
-	for($i=7; $i<12; $i++){
-		$X = 3 + (2*(i));
-		$Y = 3 + (2*(i));
-		$resourceArray[i] = 
-	}
-	for($i=12; $i<16; $i++){
-		$X = 3 + (2*(i));
-		$Y = 3 + (2*(i));
-		$resourceArray[i] = 
-	}
-	for($i=16; $i<19; $i++){
-		$X = 3 + (2*(i));
-		$Y = 3 + (2*(i));
-		$resourceArray[i] = 
+
+	for($i=1; $i<20; $i++){
+		if(i<4){
+			$resource = new Resources;
+			$X = 3 + (2*(i-1));
+			$Y = 3 + (2*(i-1));
+			$resource->xCoord = $X;
+			$resource->yCoord = $Y;
+
+			$resourceArray[i-1] = $resource;
+		}
+		if(i<8){
+			$resource = new Resources;
+			$X = 3 + (2*(i-1));
+			$Y = 3 + (2*(i-1));
+			$resource->xCoord = $X;
+			$resource->yCoord = $Y;
+
+			$resourceArray[i-1] = $resource;
+		}
+		if(i<13){
+			$resource = new Resources;
+			$X = 3 + (2*(i-1));
+			$Y = 3 + (2*(i-1));
+			$resource->xCoord = $X;
+			$resource->yCoord = $Y;
+
+			$resourceArray[i-1] = $resource;
+		}
+		if(i<17){
+			$resource = new Resources;
+			$X = 3 + (2*(i-1));
+			$Y = 3 + (2*(i-1));
+			$resource->xCoord = $X;
+			$resource->yCoord = $Y;
+
+			$resourceArray[i-1] = $resource;
+		}
+		if(i<20){
+			$resource = new Resources;
+			$X = 3 + (2*(i-1));
+			$Y = 3 + (2*(i-1));
+			$resource->xCoord = $X;
+			$resource->yCoord = $Y;
+
+			$resourceArray[i-1] = $resource;
+		}
 	}
 
 }
