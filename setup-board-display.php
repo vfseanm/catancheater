@@ -1,12 +1,5 @@
 <!-- Start of first page: #one -->
 
-<?php 
-
-$bar = new foo;
-
-$bar->get_name();
-
-?>
 
 
 	<div data-role="header">
@@ -30,7 +23,7 @@ $bar->get_name();
    				<option value="ore">Ore</option>
       			<option value="brick">Brick</option>
 			</select>
-		<label for="slider-a1">Number</label>
+		<label for="resource-h1">Number</label>
 			<input type="range" name="slider-a1" id="slider-a1" value="7" min="0" max="12" />
 
 			<h3>A2:</h3>	
