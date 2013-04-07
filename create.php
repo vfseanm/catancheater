@@ -14,7 +14,6 @@ $sql2 = "CREATE TABLE hexes(ID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(ID), Nam
 
 // Execute query
  mysqli_query($con,$sql);
- mysqli_query($con,$sql1);
  mysqli_query($con,$sql2);
 
 mysqli_query($con,"INSERT INTO players (Name, ID, Wood, Bricks, Sheep, Ore, Grain)

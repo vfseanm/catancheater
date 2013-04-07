@@ -41,11 +41,11 @@
 		
 		<label for="resource" class="select">Resource:</label>
 			<select name = "resource" id = "resource" >
-   				<option value="wood">Wood</option>
-   				<option value="sheep">Sheep</option>
-   				<option value="grains">Grain</option>
-   				<option value="ore">Ore</option>
-      			<option value="brick">Brick</option>
+   				<option value="Wood">Wood</option>
+   				<option value="Sheep">Sheep</option>
+   				<option value="Grain">Grain</option>
+   				<option value="Ore">Ore</option>
+      			<option value="Brick">Brick</option>
 			</select>
 		<label for="diceroll">Number</label>
 		<input type="range" name = "diceroll" id="diceroll" value="7" min="0" max="12" />
@@ -182,18 +182,18 @@
 		<label for="diceroll-h12">Number</label>
 		<input type="range"  id="diceroll-h12" value="7" min="0" max="12" /> -->
 
-		<script>
-
-			function goToSetUp(){
-			window.location = "/#main"
-			}
-
-		</script>
+		
 
 		<button type="submit" data-theme="b" name="submit" value="submit-value" onclick = "goToSetUp()">Save</button>
 		<p><a href="#player1" data-role="button">Start game</a></p>	
 	</fieldset>
 	</form>
+	<script>
+			function goToSetUp(){
+			window.location = "/#main"
+			}
+
+	</script>
 
 
 
