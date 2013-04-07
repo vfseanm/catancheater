@@ -35,7 +35,7 @@ $resourcesPutIn=array();
 	$numberMaps = array(2=>1, 3=>2, 4=>3, 5=>4, 6=>5, 8=>5, 9=>4, 10=>3, 11=>2, 12=>1);
 
 
-	$vertArray[0] = array($numberMaps[$resourceArray[0]->number], 0); /*
+	$vertArray[0] = array($numberMaps[$resourceArray[0]->number], 0); 
 	$vertArray[1] = array($numberMaps[$resourceArray[0]->number], 1);
 	$vertArray[2] = array($numberMaps[$resourceArray[0]->number] + $numberMaps[$resourceArray[1]->number], 2);
 	$vertArray[3] = array($numberMaps[$resourceArray[1]->number], 3); 
@@ -47,11 +47,11 @@ $resourcesPutIn=array();
 	$vertArray[8] = array($numberMaps[$resourceArray[3]->number] + $numberMaps[$resourceArray[0]->number], 8);
 	$vertArray[9] = array($numberMaps[$resourceArray[0]->number] + $numberMaps[$resourceArray[3]->number]+ $numberMaps[$resourceArray[4]->number], 9);
 	$vertArray[10] = array($numberMaps[$resourceArray[0]->number] + $numberMaps[$resourceArray[1]->number]+ $numberMaps[$resourceArray[4]->number], 10);
-	$vertArray[11] = array($numberMaps[$resourceArray[1]->number] + $numberMaps[$resourceArray[4]->number]+ $numberMaps[$resourceArray[5]->number], 11;
+	$vertArray[11] = array($numberMaps[$resourceArray[1]->number] + $numberMaps[$resourceArray[4]->number]+ $numberMaps[$resourceArray[5]->number], 11); 
 	$vertArray[12] = array($numberMaps[$resourceArray[1]->number] + $numberMaps[$resourceArray[2]->number]+ $numberMaps[$resourceArray[5]->number], 12);
 	$vertArray[13] = array($numberMaps[$resourceArray[2]->number] + $numberMaps[$resourceArray[5]->number]+ $numberMaps[$resourceArray[6]->number], 13);
 	$vertArray[14] = array($numberMaps[$resourceArray[2]->number] + $numberMaps[$resourceArray[6]->number], 14);
-	$vertArray[15] = array($numberMaps[$resourceArray[6]->number], 15);
+	$vertArray[15] = array($numberMaps[$resourceArray[6]->number], 15); 
 
 	$vertArray[16] = array($numberMaps[$resourceArray[7]->number], 16); 
 	$vertArray[17] = array($numberMaps[$resourceArray[7]->number] + $numberMaps[$resourceArray[3]->number], 17);
@@ -66,7 +66,7 @@ $resourcesPutIn=array();
 	$vertArray[26] = array($numberMaps[$resourceArray[11]->number], 26);
 
 	$vertArray[27] = array($numberMaps[$resourceArray[7]->number], 27); 
-	$vertArray[28] = array($numberMaps[$resourceArray[7]->number] + $numberMaps[$resourceArray[12]->number], 28);
+	$vertArray[28] = array($numberMaps[$resourceArray[7]->number] + $numberMaps[$resourceArray[12]->number], 28); 
 	$vertArray[29] = array($numberMaps[$resourceArray[7]->number] + $numberMaps[$resourceArray[8]->number]+ $numberMaps[$resourceArray[12]->number], 29);
 	$vertArray[30] = array($numberMaps[$resourceArray[8]->number] + $numberMaps[$resourceArray[12]->number]+ $numberMaps[$resourceArray[13]->number], 30);
 	$vertArray[31] = array($numberMaps[$resourceArray[8]->number] + $numberMaps[$resourceArray[9]->number]+ $numberMaps[$resourceArray[13]->number], 31);
