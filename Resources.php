@@ -9,7 +9,6 @@ class Resources{
 	public $bottomRightCordinate;
 	public $name;
 	public $number;
-	public $number;
 	public $resource;
 	public $settlement1;
 	public $settlement2;
@@ -17,8 +16,12 @@ class Resources{
 	public $settlement4;
 	public $settlement5;
 	public $settlement6;
-	public $xCoord;
-	public $yCoord;
+	public $vert1;
+	public $vert2;
+	public $vert3;
+	public $vert4;
+	public $vert5;
+	public $vert6;
 
 
 }
