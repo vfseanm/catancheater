@@ -41,7 +41,7 @@
 		<p>You link to internal pages by referring to the <code>id</code> of the page you want to show. For example, to <a href="#two" >link</a> to the page with an <code>id</code> of "two", my link would have a <code>href="#two"</code> in the code.</p>	
 
 		<h3>Start game:</h3>
-	<form action="setup_board.php" method="get">
+	<form action="create.php" method="get">
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Set up game</button>
 	</form>
 
@@ -67,41 +67,33 @@
  -->
 
 <!-- Start player one page: #player1 -->
-<div data-role="page" id="player1" data-theme="b">
+<div data-role="page" id="player1" data-theme="">
 
 	<div data-role="header">
-<<<<<<< HEAD
-		<h1>Player 1's turn</h1>
-	</div><!-- /header -->
 
-	<div data-role="content" data-theme="b">	
-		<h2>Player 1</h2>
-		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
-		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
-=======
 		<h1>Player 1's Turn</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="a">	
+	<div data-role="content" data-theme="b">	
 
 	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
 		<fieldset>
->>>>>>> b7c2c9668a9dcbb85b6667cc9536d986963f8f3d
+
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
-<<<<<<< HEAD
+
 		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
 
-=======
+
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
 	</form>
 		
 
 <p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
->>>>>>> b7c2c9668a9dcbb85b6667cc9536d986963f8f3d
+
 		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
 			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
 			<a href="#player2" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>
@@ -261,9 +253,11 @@
 		<h1>Build settlements</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="d">	
-		<h2>Trade Player Two three wood for five sheep </h2>
-		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
+	<?php
+
+include 'build_form.php'
+	?>
+
 		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
 	</div><!-- /content -->
 	

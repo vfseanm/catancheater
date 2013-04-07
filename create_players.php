@@ -15,6 +15,6 @@ VALUES ('Sean Miller', 12, 35)");
 
 mysqli_close($con);
 
-#header("location: http://localhost:8888/#player1");
+header("location: http://localhost:8888/#player1");
 
  ?>
