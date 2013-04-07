@@ -101,8 +101,8 @@
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">See Best Settlements</a>
 	</div> 
 			<a href="/p1card.php" data-theme = 'e' data-role="button">See my cards</a>
-			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
-			<a href="#player2" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
+			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous</a>
+			<a href="#player2" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next</a>		
 	</div><!-- /content -->
 	
 	<div data-role="footer">
@@ -141,9 +141,9 @@
 		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
 	</div>
-
-			<a href="#player1" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
-			<a href="#player3" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
+			<a href="/p2card.php" data-theme = 'e' data-role="button">See my cards</a>
+			<a href="#player1" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous</a>
+			<a href="#player3" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next</a>		
 	</div><!-- /content -->
 	
 	<div data-role="footer">
@@ -182,8 +182,8 @@
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
 	</div>
 
-			<a href="#player2" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
-			<a href="#player4" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
+			<a href="#player2" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous</a>
+			<a href="#player4" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next</a>		
 	</div><!-- /content -->
 <div data-role="footer">
 		<h4>&copy 2013</h4>
@@ -221,8 +221,8 @@
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
 	</div>
 
-			<a href="#player3" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
-			<a href="#player1" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
+			<a href="#player3" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous</a>
+			<a href="#player1" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next</a>		
 	</div><!-- /content -->
 <div data-role="footer">
 		<h4>&copy 2013</h4>
