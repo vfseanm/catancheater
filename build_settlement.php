@@ -6,7 +6,7 @@ $hex3 = $_GET['third'];
 $portID = 0;
 $player_id = $_GET['playerID'];
 
-echo $hex1;
+
 
 // Create connection
 $con=mysqli_connect("localhost", "root", "root", "catan");
@@ -51,6 +51,9 @@ while($row = mysqli_fetch_array($result1)){
 
 
 mysqli_query($con, "INSERT INTO hexes(Name, Type, DiceRoll, playerID) VALUES ('$hex3', '$type', '$diceNumber', '$player_id')");
+
+
+header("location: http://localhost:8888/#player".$player_id);
 
 
 

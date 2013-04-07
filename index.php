@@ -98,7 +98,7 @@
 	</fieldset>
 	</form>
 	<div>
-		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
+		<a href="#build1" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">See Best Settlements</a>
 	</div>
 
@@ -139,7 +139,7 @@
 	</fieldset>
 	</form>
 	<div>
-		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
+		<a href="#build2" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
 	</div>
 
@@ -179,7 +179,7 @@
 	</fieldset>
 	</form>
 	<div>
-		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
+		<a href="#build3" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
 	</div>
 
@@ -218,7 +218,7 @@
 	</fieldset>
 	</form>
 	<div>
-		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
+		<a href="#build4" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
 	</div>
 
@@ -242,7 +242,7 @@
 <div data-role="page" id="recommendation">
 
 	<div data-role="header" data-theme="e">
-		<h1>Your recommendation</h1>
+		<h1>Settlement Ranking:</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="d">
@@ -289,7 +289,7 @@
  <!-- #####################################################################################################################################
  -->
 <!-- Start of third page: #popup -->
-<div data-role="page" id="build">
+<div data-role="page" id="build1">
 
 	<div data-role="header" data-theme="e">
 		<h1>Build settlements</h1>
@@ -297,11 +297,9 @@
 
 	<?php
 
-include 'build_form.php'
+		include 'build_form_player1.php'
 	?>
-
-		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
-	</div><!-- /content -->
+	
 	
 	<div data-role="footer">
 	</div><!-- /footer -->
@@ -311,15 +309,48 @@ include 'build_form.php'
 
 
 <!-- Start of third page: #popup -->
-<div data-role="page" id="build">
+<div data-role="page" id="build2">
 	<div data-role="header" data-theme="e">
 		<h1>Build settlements</h1>
 	</div><!-- /header -->
 
 	<?php
 
-		include 'build_form.php'
+		include 'build_form_player2.php'
 	?>
+
+			
+	<div data-role="footer">
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="build3">
+	<div data-role="header" data-theme="e">
+		<h1>Build settlements</h1>
+	</div><!-- /header -->
+
+	<?php
+
+		include 'build_form_player3.php'
+	?>
+
+			
+	<div data-role="footer">
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="build4">
+	<div data-role="header" data-theme="e">
+		<h1>Build settlements</h1>
+	</div><!-- /header -->
+
+	<?php
+
+		include 'build_form_player4.php'
+	?>
+
 			
 	<div data-role="footer">
 	</div><!-- /footer -->
