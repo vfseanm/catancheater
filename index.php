@@ -85,22 +85,22 @@
 
 	<div data-role="content" data-theme="b">	
 		<h2>Player 1</h2>
-		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
 
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="b">	
 
-	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+	<form action="diceroll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
 		<fieldset>
 
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
-		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
+		   <input type="range" name="diceroll" id="slider" value="6" min="0" max="12"  />
 		</div>
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
 	</form>
+		
 	<div>
 		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
@@ -132,12 +132,12 @@
 
 	<div data-role="content" data-theme="b">	
 
-	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+	<form action="diceroll2.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
 		<fieldset>
 
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
-		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
+		   <input type="range" name="diceroll" id="slider" value="6" min="0" max="12"  />
 		</div>
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
@@ -172,12 +172,12 @@
 
 	<div data-role="content" data-theme="b">	
 
-	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+	<form action="diceroll3.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
 		<fieldset>
 
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
-		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
+		   <input type="range" name="diceroll" id="slider" value="6" min="0" max="12"  />
 		</div>
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
@@ -211,12 +211,12 @@
 
 	<div data-role="content" data-theme="b">	
 
-	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+	<form action="diceroll4.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
 		<fieldset>
 
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
-		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
+		   <input type="range" name="diceroll" id="slider" value="6" min="0" max="12"  />
 		</div>
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
