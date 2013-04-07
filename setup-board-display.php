@@ -1,11 +1,13 @@
-
-
-
-
-
 <!-- Start of first page: #one -->
 
 <?php 
+<<<<<<< HEAD
+=======
+
+$bar = new foo;
+
+$bar->get_name();
+>>>>>>> 95c28eb0ae901cb4c5e3b4d2d7bba1f173ac4d8a
 
 ?>
 
@@ -23,8 +25,8 @@
 		
 		
 		<h3>A1:</h3>	
-		<label for="select-choice-a1" class="select">Resource:</label>
-			<select name="select-choice-a1" id="select-choice-a1">
+		<label for="resource-h1" class="select">Resource:</label>
+			<select name="resource-h1" >
    				<option value="wood">Wood</option>
    				<option value="sheep">Sheep</option>
    				<option value="grains">Grain</option>

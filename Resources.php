@@ -17,7 +17,8 @@ class Resources{
 	public $settlement4;
 	public $settlement5;
 	public $settlement6;
-
+	public $xCoord;
+	public $yCoord;
 
 
 }

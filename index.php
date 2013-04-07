@@ -41,7 +41,10 @@
 		<p>You link to internal pages by referring to the <code>id</code> of the page you want to show. For example, to <a href="#two" >link</a> to the page with an <code>id</code> of "two", my link would have a <code>href="#two"</code> in the code.</p>	
 
 		<h3>Start game:</h3>
-		<p><a href="#main" data-role="button">Set up game</a></p>	
+	<form action="create.php" method="get">
+		<button type="submit" data-theme="b" name="submit" value="submit-value">Set up game</button>
+	</form>
+
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-theme="d">
@@ -64,19 +67,23 @@
  -->
 
 <!-- Start player one page: #player1 -->
-<div data-role="page" id="player1" data-theme="b">
+<div data-role="page" id="player1" data-theme="">
 
 	<div data-role="header">
+
 		<h1>Player 1's turn</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="b">	
 		<h2>Player 1</h2>
 		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
+
+
+
 		<h1>Player 1's Turn</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="a">	
+	<div data-role="content" data-theme="b">	
 
 	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
 		<fieldset>
@@ -87,10 +94,14 @@
 		</div>
 
 
+
+
+
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
 	</form>
 		
+
 
 	<div>
 		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
@@ -99,6 +110,13 @@
 
 			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
 			<a href="#player2" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>
+
+<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
+
+		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
+			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
+			<a href="#player2" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>
+
 		
 	</div><!-- /content -->
 	
@@ -255,9 +273,11 @@
 		<h1>Build settlements</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="d">	
-		<h2>Trade Player Two three wood for five sheep </h2>
-		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
+	<?php
+
+include 'build_form.php'
+	?>
+
 		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
 	</div><!-- /content -->
 	
