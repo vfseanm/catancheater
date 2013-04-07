@@ -1,5 +1,6 @@
 <?php
-public $resourceArray=array();
+public $resourceArray = array();
+public $vertArray = array();
 
 $con=mysqli_connect("localhost","root","root","catan");
 
@@ -27,6 +28,8 @@ $con=mysqli_connect("localhost","root","root","catan");
 	for($squareNumber=1; $squareNumber<=19; $squareNumber++){
 		echo $row
 	}
+
+
 
 function resourceList(){
 
@@ -105,7 +108,10 @@ function resourceList(){
 	$v52 = $numberMaps[resourceArray[18]->number];
 	$v53 = $numberMaps[resourceArray[18]->number];
 
-
+	for($i=0; $i<54; $i++){
+		$vertArray[i] = $v + i;
+	}
+	sort($vertArray);
 }
 
  mysqli_close($con);
