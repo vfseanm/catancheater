@@ -41,7 +41,10 @@
 		<p>You link to internal pages by referring to the <code>id</code> of the page you want to show. For example, to <a href="#two" >link</a> to the page with an <code>id</code> of "two", my link would have a <code>href="#two"</code> in the code.</p>	
 
 		<h3>Start game:</h3>
-		<p><a href="#main" data-role="button">Set up game</a></p>	
+	<form action="setup_board.php" method="get">
+		<button type="submit" data-theme="b" name="submit" value="submit-value">Set up game</button>
+	</form>
+
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-theme="d">
