@@ -87,9 +87,6 @@
 		<h2>Player 1</h2>
 		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
 
-
-
-		<h1>Player 1's Turn</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="b">	
@@ -101,32 +98,16 @@
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
-
-
-
-
-
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
 	</form>
-		
-
-
 	<div>
 		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
 	</div>
 
 			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
-			<a href="#player2" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>
-
-<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
-
-		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
-			<a href="#player2" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>
-
-		
+			<a href="#player2" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
 	</div><!-- /content -->
 	
 	<div data-role="footer">
@@ -145,16 +126,29 @@
 
 	<div data-role="content" data-theme="b">	
 		<h2>Player 2</h2>
-		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
-		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
+		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
+
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="b">	
+
+	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+		<fieldset>
+
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
-		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
-		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-		<a href="#player1" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
-	    <a href="#player3" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>	
+		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+	</fieldset>
+	</form>
+	<div>
+		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
+		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
+	</div>
+
+			<a href="#player1" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
+			<a href="#player3" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
 	</div><!-- /content -->
 	
 	<div data-role="footer">
@@ -165,58 +159,80 @@
 <!-- #####################################################################################################################################
  -->
 <div data-role="page" id="player3" data-theme="b">
-
 	<div data-role="header">
+
 		<h1>Player 3's turn</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="b">	
 		<h2>Player 3</h2>
-		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
-		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
+		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
+
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="b">	
+
+	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+		<fieldset>
+
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
-		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
-		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-		<a href="#player2" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
-	    <a href="#player4" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>	
+		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+	</fieldset>
+	</form>
+	<div>
+		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
+		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
+	</div>
+
+			<a href="#player2" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
+			<a href="#player4" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
 	</div><!-- /content -->
-	
-	<div data-role="footer">
+<div data-role="footer">
 		<h4>&copy Sean Miller, Dan Deng</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
-
  <!-- #####################################################################################################################################
  -->
 <div data-role="page" id="player4" data-theme="b">
-
 	<div data-role="header">
+
 		<h1>Player 4's turn</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="b">	
 		<h2>Player 4</h2>
-		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
-		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
+		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
+
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="b">	
+
+	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+		<fieldset>
+
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
-		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
-		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-		<a href="#player3" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
-	    <a href="#player1" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>	
+		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+	</fieldset>
+	</form>
+	<div>
+		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
+		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
+	</div>
+
+			<a href="#player3" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
+			<a href="#player1" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
 	</div><!-- /content -->
-	
-	<div data-role="footer">
+<div data-role="footer">
 		<h4>&copy Sean Miller, Dan Deng</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
-
 
 
 
@@ -234,8 +250,8 @@
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="d">	
-		<h2>Trade Player Two three wood for five sheep </h2>
-		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>		
+		<h2>Trade Player Two: <b>3</b> Wood for <b>5</b> Sheep </h2>
+		<p> This will increase your chances of constructing a city. </p>		
 		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
 	</div><!-- /content -->
 	

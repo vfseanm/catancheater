@@ -182,9 +182,15 @@
 		<label for="diceroll-h12">Number</label>
 		<input type="range"  id="diceroll-h12" value="7" min="0" max="12" /> -->
 
-		
+		<script>
 
-		<button type="submit" data-theme="b" name="submit" value="submit-value">Save</button>
+			function goToSetUp(){
+			window.location = "/#main"
+			}
+
+		</script>
+
+		<button type="submit" data-theme="b" name="submit" value="submit-value" onclick = "goToSetUp()">Save</button>
 		<p><a href="#player1" data-role="button">Start game</a></p>	
 	</fieldset>
 	</form>

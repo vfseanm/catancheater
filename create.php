@@ -9,9 +9,7 @@ if (mysqli_connect_errno())
 
 $sql="CREATE TABLE players(ID INT NOT NULL AUTO_INCREMENT, Name CHAR(50), PRIMARY KEY(ID), Wood INT, Bricks INT, Sheep INT, Ore INT, Grain INT)";
 
-$sql1 = "CREATE TABLE settlements(ID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(ID), playerID INT, portID INT, hex1ID INT, hex2ID INT, hex3ID INT)";
-
-$sql2 = "CREATE TABLE hexes(ID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(ID), Type Char(10), DiceRoll INT)";
+$sql2 = "CREATE TABLE hexes(ID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(ID), Name Char(10), Type Char(10), DiceRoll INT, playerID INT)";
 
 
 // Execute query
@@ -30,6 +28,4 @@ VALUES ('Player3', 3, 0, 0, 0, 0, 0)");
 
 mysqli_query($con,"INSERT INTO players (Name, ID, Wood, Bricks, Sheep, Ore, Grain)
 VALUES ('Player4', 4, 0, 0, 0, 0, 0)");
-
-header("location: http://localhost:8888/#main");
 ?>

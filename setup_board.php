@@ -7,12 +7,12 @@ $hex= $_GET['hex'];
 echo $resource;
 $con=mysqli_connect("localhost","root","root","catan");
 
-mysqli_query($con,"INSERT INTO hexes (ID, Type, DiceRoll, Sheep, Ore, Grain)
-VALUES ('Player1', 1, 0, 0, 0, 0, 0)");
+mysqli_query($con,"INSERT INTO hexes (Type, DiceRoll)
+VALUES ('$resource', '$diceroll')");
 
 
 
-// header("location: http://localhost:8888/#main");
+header("location: http://localhost:8888/#main");
 
  ?>
 
