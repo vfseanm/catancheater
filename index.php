@@ -80,6 +80,15 @@
 
 	<div data-role="header">
 
+		<h1>Player 1's turn</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="b">	
+		<h2>Player 1</h2>
+		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
+
+
+
 		<h1>Player 1's Turn</h1>
 	</div><!-- /header -->
 
@@ -93,7 +102,8 @@
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
 
-		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
+
+
 
 
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
@@ -101,11 +111,21 @@
 	</form>
 		
 
+
+	<div>
+		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
+		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
+	</div>
+
+			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
+			<a href="#player2" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>
+
 <p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
 
 		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
 			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
 			<a href="#player2" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>
+
 		
 	</div><!-- /content -->
 	
