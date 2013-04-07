@@ -12,10 +12,6 @@ function initialize(){
 }
 
 function resourceList(){
-	
-	$resource = new Resources;
-	$resource->xCoord;
-	$resource->xCoord;
 
 	$resourceArray=array();
 
