@@ -41,3 +41,7 @@
 			<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
 	</form>
+
+   <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>
+
+</div>
