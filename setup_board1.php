@@ -25,11 +25,6 @@ $con=mysqli_connect("localhost","root","root","catan");
 		}
 	}
 
-	for($squareNumber=1; $squareNumber<=19; $squareNumber++){
-		echo $row
-	}
-
-
 
 function resourceList(){
 
@@ -109,7 +104,7 @@ function resourceList(){
 	$v53 = $numberMaps[resourceArray[18]->number];
 
 	for($i=0; $i<54; $i++){
-		$vertArray[i] = $v + i;
+		$vertArray[i] = $v $(i);
 	}
 	sort($vertArray);
 }
