@@ -103,7 +103,7 @@
 		
 	<div>
 		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
-		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
+		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">See Best Settlements</a>
 	</div>
 
 			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
@@ -249,9 +249,13 @@
 		<h1>Your recommendation</h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="d">	
-		<h2>Trade Player Two: <b>3</b> Wood for <b>5</b> Sheep </h2>
-		<p> This will increase your chances of constructing a city. </p>		
+	<div data-role="content" data-theme="d">
+	<?php
+
+	include	'setup_board1.php';
+
+	?>
+			
 		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
 	</div><!-- /content -->
 	
@@ -259,6 +263,8 @@
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
+
+
 
 <!-- #####################################################################################################################################
  -->
@@ -282,15 +288,11 @@
 
 <!-- #####################################################################################################################################
  -->
-
 </body>
 </html>
 
  <!-- #####################################################################################################################################
  -->
-
-
-
 <!-- Start of third page: #popup -->
 <div data-role="page" id="build">
 
@@ -310,6 +312,26 @@ include 'build_form.php'
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
+
+
+
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="build">
+	<div data-role="header" data-theme="e">
+		<h1>Build settlements</h1>
+	</div><!-- /header -->
+
+	<?php
+
+		include 'build_form.php'
+	?>
+			
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
 
 </body>
 </html>
