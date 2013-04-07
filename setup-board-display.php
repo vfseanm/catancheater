@@ -22,8 +22,8 @@ $bar->get_name();
 		
 		
 		<h3>A1:</h3>	
-		<label for="select-choice-a1" class="select">Resource:</label>
-			<select name="select-choice-a1" id="select-choice-a1">
+		<label for="resource-h1" class="select">Resource:</label>
+			<select name="resource-h1" >
    				<option value="wood">Wood</option>
    				<option value="sheep">Sheep</option>
    				<option value="grains">Grain</option>
@@ -249,7 +249,7 @@ $bar->get_name();
 		<label for="slider-1">Number</label>
 			<input type="range" name="slider-1" id="slider-1" value="7" min="0" max="12" />
 
-		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+		<button type="submit" data-theme="b" name="submit" value="submit-value">Save</button>
 		<p><a href="#player1" data-role="button">Start game</a></p>	
 	</fieldset>
 	</form>
