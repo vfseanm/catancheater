@@ -5,6 +5,13 @@
 
 <!-- Start of first page: #one -->
 
+<?php 
+$bar = new foo;
+
+$bar->get_name();
+
+?>
+
 
 	<div data-role="header">
 		<h1>Catan Cheater</h1>
@@ -250,6 +257,7 @@
 		<p><a href="#player1" data-role="button">Start game</a></p>	
 	</fieldset>
 	</form>
+
 
 
 	</div><!-- /content -->

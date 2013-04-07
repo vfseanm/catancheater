@@ -1,6 +1,8 @@
-<?php
- 
 
-header ("location: http://localhost:8888/#main");
- #create_board()
-?>
+<?php 
+header("location: http://localhost:8888/#player1");
+
+ ?>
+
+
+
