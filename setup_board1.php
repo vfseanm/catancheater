@@ -43,7 +43,7 @@ $resourcesPutIn=array();
 	$vertArray[5] = array($numberMaps[$resourceArray[2]->number], 5);  
 	$vertArray[6] = array($numberMaps[$resourceArray[2]->number], 6);
 
-	$vertArray[7] = ($numberMaps[$resourceArray[3]->number], 7); /*
+	$vertArray[7] = ($numberMaps[$resourceArray[3]->number], 7); 
 	$vertArray[8] = ($numberMaps[$resourceArray[3]->number] + $numberMaps[$resourceArray[0]->number], 8);
 	$vertArray[9] = ($numberMaps[$resourceArray[0]->number] + $numberMaps[$resourceArray[3]->number]+ $numberMaps[$resourceArray[4]->number], 9);
 	$vertArray[10] = ($numberMaps[$resourceArray[0]->number] + $numberMaps[$resourceArray[1]->number]+ $numberMaps[$resourceArray[4]->number], 10);
