@@ -1,30 +1,42 @@
 <?php
-// function initialize(){
-// 	$rollValue;
-// 	$resource;
-// 	for($squareNumber=1; $squareNumber<=19; $squareNumber++){
-// 		printf("Enter the roll value for %s\n", $squareNumber);
-// 		$resource = $_GET["slider-a1"];
-// 		printf("Enter the resource value for %s\n", $squareNumber);
-// 		$resource = $_GET["select-choice-a1"];
+public $resourceArray=array();
 
-// 	}
-// }
+$con=mysqli_connect("localhost,"root","root","catan");
+
+// Check connection
+	if (mysqli_connect_errno()){
+  		echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	}
+
+	$result = mysqli_query($con,"SELECT * FROM hexes");
+
+	while($row = mysqli_fetch_array($result)){
+		
+		echo $row['Type'] . " " . $row['DiceRoll'];
+		echo "<br />";
+		$resource1 = new Resources;
+		$resource1->number = $row['DiceRoll'];
+		$resource1->resource = $row['Type'];
+		resourceArray[] =  $resource1;
+	}
+
+	for($squareNumber=1; $squareNumber<=19; $squareNumber++){
+		echo $row
+	}
 
 function resourceList(){
 
-	for($i=1; $i<20; $i++){
+	// for($i=1; $i<20; $i++){
 
-		$resourceArray=array();
-		$resource = new Resources;
+	// 	$resource = new Resources;
 
-		printf("Enter the roll value for %s\n", $squareNumber);
-		$resource->number = $_GET["slider-a1"];
+	// 	//printf("Enter the roll value for %s\n", $squareNumber);
+	// 	$resource->number = $_GET["slider-a1"];
 			
-		printf("Enter the resource value for %s\n", $squareNumber);
-		$resource->resource = $_GET["select-choice-a1"];	
-		$resourceArray[i-1] = $resource;
-	}
+	// 	//printf("Enter the resource value for %s\n", $squareNumber);
+	// 	$resource->resource = $_GET["select-choice-a1"];	
+	// 	$resourceArray[i-1] = $resource;
+	// }
 	
 	public $vertecies;
 	$numberMap = array(2=>1, 3=>2, 4=>3, 5=>4, 6=>5, 8=>5, 9=>4, 10=>3, 11=>2, 12=>1);
@@ -92,4 +104,5 @@ function resourceList(){
 
 }
 
+ mysqli_close($con);
 ?>
