@@ -1,7 +1,7 @@
 <?php
 public $resourceArray=array();
 
-$con=mysqli_connect("localhost,"root","root","catan");
+$con=mysqli_connect("localhost","root","root","catan");
 
 // Check connection
 	if (mysqli_connect_errno()){
@@ -17,7 +17,11 @@ $con=mysqli_connect("localhost,"root","root","catan");
 		$resource1 = new Resources;
 		$resource1->number = $row['DiceRoll'];
 		$resource1->resource = $row['Type'];
-		resourceArray[] =  $resource1;
+		$resource1->hexName = $row['Name'];
+		$resource1->player = $row['playerID'];
+		if (in_array($resource1->hexName, $resourceArray) && in_array($resource1->player, $resourceArray)){
+			resourceArray[] =  $resource1;
+		}
 	}
 
 	for($squareNumber=1; $squareNumber<=19; $squareNumber++){
