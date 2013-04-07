@@ -12,21 +12,28 @@ function initialize(){
 }
 
 function resourceList(){
-
-	$resourceArray=array();
-
+	
 	for($i=1; $i<20; $i++){
+
+		$resourceArray=array();
+		$resource = new Resources;
+
+		printf("Enter the roll value for %s\n", $squareNumber);
+		$resource->number = $_GET["slider-a1"];
+			
+		printf("Enter the resource value for %s\n", $squareNumber);
+		$resource->resource = $_GET["select-choice-a1"];	
+
+
 		if(i<4){
-			$resource = new Resources;
 			$X = 3 + (2*(i-1));
 			$Y = 3 + (2*(i-1));
 			$resource->xCoord = $X;
 			$resource->yCoord = $Y;
-
+			
 			$resourceArray[i-1] = $resource;
 		}
 		if(i<8){
-			$resource = new Resources;
 			$X = 3 + (2*(i-1));
 			$Y = 3 + (2*(i-1));
 			$resource->xCoord = $X;
@@ -35,7 +42,6 @@ function resourceList(){
 			$resourceArray[i-1] = $resource;
 		}
 		if(i<13){
-			$resource = new Resources;
 			$X = 3 + (2*(i-1));
 			$Y = 3 + (2*(i-1));
 			$resource->xCoord = $X;
@@ -44,7 +50,6 @@ function resourceList(){
 			$resourceArray[i-1] = $resource;
 		}
 		if(i<17){
-			$resource = new Resources;
 			$X = 3 + (2*(i-1));
 			$Y = 3 + (2*(i-1));
 			$resource->xCoord = $X;
@@ -53,7 +58,6 @@ function resourceList(){
 			$resourceArray[i-1] = $resource;
 		}
 		if(i<20){
-			$resource = new Resources;
 			$X = 3 + (2*(i-1));
 			$Y = 3 + (2*(i-1));
 			$resource->xCoord = $X;
