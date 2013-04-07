@@ -6,10 +6,6 @@
 
 <!DOCTYPE html> 
 
-<?php
- include "foo.php";
-	
-?>
 <html>
 
 <head>
@@ -111,7 +107,7 @@
 	</div><!-- /content -->
 	
 	<div data-role="footer">
-		<h4>&copy Sean Miller, Dan Deng</h4>
+		<h4>&copy 2013</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
@@ -152,7 +148,7 @@
 	</div><!-- /content -->
 	
 	<div data-role="footer">
-		<h4>&copy Sean Miller, Dan Deng</h4>
+		<h4>&copy 2013</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
@@ -191,7 +187,7 @@
 			<a href="#player4" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
 	</div><!-- /content -->
 <div data-role="footer">
-		<h4>&copy Sean Miller, Dan Deng</h4>
+		<h4>&copy 2013</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
@@ -230,7 +226,7 @@
 			<a href="#player1" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
 	</div><!-- /content -->
 <div data-role="footer">
-		<h4>&copy Sean Miller, Dan Deng</h4>
+		<h4>&copy 2013</h4>
 	</div><!-- /footer -->
 </div><!-- /page two -->
 
@@ -260,7 +256,6 @@
 	</div><!-- /content -->
 	
 	<div data-role="footer">
-		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
 
@@ -309,7 +304,6 @@ include 'build_form.php'
 	</div><!-- /content -->
 	
 	<div data-role="footer">
-		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
 
@@ -328,7 +322,6 @@ include 'build_form.php'
 	?>
 			
 	<div data-role="footer">
-		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page popup -->
 
