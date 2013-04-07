@@ -7,7 +7,7 @@ $hex= $_GET['hex'];
 echo $resource;
 $con=mysqli_connect("localhost","root","root","catan");
 
-mysqli_query($con,"INSERT INTO players (Name, ID, Wood, Bricks, Sheep, Ore, Grain)
+mysqli_query($con,"INSERT INTO hexes (ID, Type, DiceRoll, Sheep, Ore, Grain)
 VALUES ('Player1', 1, 0, 0, 0, 0, 0)");
 
 

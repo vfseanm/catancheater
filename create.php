@@ -11,7 +11,7 @@ $sql="CREATE TABLE players(ID INT NOT NULL AUTO_INCREMENT, Name CHAR(50), PRIMAR
 
 $sql1 = "CREATE TABLE settlements(ID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(ID), playerID INT, portID INT, hex1ID INT, hex2ID INT, hex3ID INT)";
 
-$sql2 = "CREATE TABLE hexes(ID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(ID), Type Char(10), DiceRoll INT, settlement1 INT, settlement2 INT, settlement3 INT, settlement4 INT, settlement5 INT, settlement6 INT)";
+$sql2 = "CREATE TABLE hexes(ID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(ID), Type Char(10), DiceRoll INT)";
 
 
 // Execute query
