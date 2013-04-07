@@ -67,15 +67,12 @@
 <div data-role="page" id="player1" data-theme="b">
 
 	<div data-role="header">
-<<<<<<< HEAD
 		<h1>Player 1's turn</h1>
 	</div><!-- /header -->
 
 	<div data-role="content" data-theme="b">	
 		<h2>Player 1</h2>
-		<p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>	
-		<p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>	
-=======
+		<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
 		<h1>Player 1's Turn</h1>
 	</div><!-- /header -->
 
@@ -83,25 +80,25 @@
 
 	<form action="dice_roll.php" method="get" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
 		<fieldset>
->>>>>>> b7c2c9668a9dcbb85b6667cc9536d986963f8f3d
+
 		<div data-role="fieldcontain">
 		   <label for="slider">Dice Roll:</label>
 		   <input type="range" name="slider" id="slider" value="6" min="0" max="12"  />
 		</div>
-<<<<<<< HEAD
-		<p><a href="#build" data-role="button" data-rel="dialog" data-transition="pop">Build settlements</a></p>
 
-=======
+
 		<button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
 	</fieldset>
 	</form>
 		
 
-<p><a href="#map" data-role="button" data-rel="dialog" data-transition="pop">Map Reference</a></p>
->>>>>>> b7c2c9668a9dcbb85b6667cc9536d986963f8f3d
-		<p><a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop">Get trade recommendation</a></p>
-			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-l">Previous turn</a>
-			<a href="#player2" data-role="button" data-inline="true" data-icon="arrow-r">Next turn</a>
+	<div>
+		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
+		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Get trade recommendation</a>
+	</div>
+
+			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
+			<a href="#player2" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>
 		
 	</div><!-- /content -->
 	

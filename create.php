@@ -18,7 +18,7 @@ $sql2 = "CREATE TABLE hexes(PRIMARY KEY(ID), ID INT, Type Char(10), DiceRoll INT
  mysqli_query($con,$sql1);
  mysqli_query($con,$sql2);
 
- mysqli_query($con,"INSERT INTO players (Name, ID, Wood, Bricks, Sheep, Ore, Grain)
+mysqli_query($con,"INSERT INTO players (Name, ID, Wood, Bricks, Sheep, Ore, Grain)
 VALUES ('Player1', 1, 0, 0, 0, 0, 0)");
 
 mysqli_query($con,"INSERT INTO players (Name, ID, Wood, Bricks, Sheep, Ore, Grain)

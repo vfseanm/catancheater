@@ -6,9 +6,6 @@
 <!-- Start of first page: #one -->
 
 <?php 
-$bar = new foo;
-
-$bar->get_name();
 
 ?>
 
