@@ -1,9 +1,4 @@
-<?php
 
-
-
-
-?>
 <html>
 
 <head>
@@ -71,7 +66,20 @@
   			}
   		mysqli_close($con);	
 		?>
+		<img src = "rocks.png">
+		<?php
+		$con=mysqli_connect("localhost","root","root","catan");
+		$result = mysqli_query($con,"SELECT * FROM players WHERE ID =1");
+		while($row = mysqli_fetch_array($result))
+  			{
+  		    echo "Ore: ";
+  		    echo $row['Ore'];
+  		    echo "<br>";
+  			}
+  		mysqli_close($con);	
+		?>
 
+		<p><a href="http://localhost:8888/#player1" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back</a></p>	
 	</div>
 
 

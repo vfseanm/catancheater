@@ -100,8 +100,8 @@
 	<div>
 		<a href="#build" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">Build settlements</a>
 		<a href="#recommendation" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true" data-theme="d">See Best Settlements</a>
-	</div>
-
+	</div> 
+			<a href="/p1card.php" data-theme = 'e' data-role="button">See my cards</a>
 			<a href="#player4" data-direction="reverse" data-role="button" data-inline="true" data-icon="arrow-l">Previous turn</a>
 			<a href="#player2" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r">Next turn</a>		
 	</div><!-- /content -->
