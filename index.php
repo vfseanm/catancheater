@@ -6,10 +6,6 @@
 
 <!DOCTYPE html> 
 
-<?php
- include "foo.php";
-	
-?>
 <html>
 
 <head>
