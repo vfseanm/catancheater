@@ -3,3 +3,5 @@ README
 Catancheaters is a webapp to assist players cheat at the game of catan, the goals of this app are to:
 tell players the best places to put their first two settlements, show the player the other players cards,
 and to do so dynamically so that all the user has to input per turn is the dice roll.
+
+It would be nice to implement a bit more functionality to this app.
